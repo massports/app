@@ -3,29 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Reusable Map Template</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <title>Keeley's MassPort</title>
+
+  <!-- Styles & Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Yrsa:wght@500&display=swap" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Yrsa:wght@500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
+
+  <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/xT5k075d/icon-MARKER.png">
 </head>
 <body>
-  <div id="map"></div>
-  <div id="cornerPhoto">
-    <img src="https://raw.githubusercontent.com/rypittner/massport/refs/heads/main/mass-port.png" alt="Corner Photo">
-  </div>
-  <div id="myModal" class="modal">
-    <span class="close material-symbols-rounded">close_small</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
 
-  <!-- Leaflet & dependencies -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+<div id="map"></div>
 
-  <!-- Your reusable JS -->
-  <script src="map.js"></script>
+<div id="cornerPhoto">
+  <img src="https://raw.githubusercontent.com/rypittner/massport/refs/heads/main/mass-port.png" alt="Corner Photo">
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close material-symbols-rounded">close_small</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+<script src="map.js"></script>
+
 </body>
 </html>
